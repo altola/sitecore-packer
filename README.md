@@ -30,8 +30,6 @@ Most of the components, including the core operating systems, share the followin
 
 * Put **dev.sitecore.net** credentials into **src/components/commerce/chef/cookbooks/scp_commerce/attributes/secret.rb**. Check **secrets.md** for a sample.
 
-* Put a link to **SQL Server 2016 Dev SP2** into **src/components/sql/chef/cookbooks/scp_sql/attributes/2016_developer.rb**
-
 * For boxes with Sitecore put **license.xml** file in the same folder with **Vagrantfile** that is used to up the box.
 
 ---
