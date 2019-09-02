@@ -50,8 +50,8 @@
                 <OSImage>
                     <InstallFrom>
                         <MetaData wcm:action="add">
-                            <Key>/IMAGE/NAME </Key>
-                            <Value>Windows Server 2016 SERVERSTANDARD</Value>
+                            <Key>/IMAGE/NAME</Key>
+                            <Value>Windows 10 Pro</Value>
                         </MetaData>
                     </InstallFrom>
                     <InstallTo>
@@ -62,7 +62,9 @@
             </ImageInstall>
             <UserData>
                 <ProductKey>
-                    <WillShowUI>OnError</WillShowUI>
+                    <!-- https://docs.microsoft.com/en-us/windows-server/get-started/kmsclientkeys -->
+                    <Key>W269N-WFGWX-YVC9B-4J6C9-T83GX</Key>
+                    <WillShowUI>Never</WillShowUI> 
                 </ProductKey>
                 <AcceptEula>true</AcceptEula>
                 <FullName>Vagrant</FullName>
@@ -135,8 +137,10 @@
                 <HideOEMRegistrationScreen>true</HideOEMRegistrationScreen>
                 <HideOnlineAccountScreens>true</HideOnlineAccountScreens>
                 <HideWirelessSetupInOOBE>true</HideWirelessSetupInOOBE>
-                <NetworkLocation>Home</NetworkLocation>
+                <NetworkLocation>Work</NetworkLocation>
                 <ProtectYourPC>3</ProtectYourPC>
+                <SkipUserOOBE>true</SkipUserOOBE>
+                <SkipMachineOOBE>true</SkipMachineOOBE>
             </OOBE>
             <UserAccounts>
                 <AdministratorPassword>
