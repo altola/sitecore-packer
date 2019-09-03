@@ -19,13 +19,13 @@ action :install do
     action :create
   end
 
-  # vs_file_name = 'vs_professional.exe'
-  # vs_file_path = "#{directory_path}/#{vs_file_name}"
-  # cookbook_file vs_file_path do
-  #   source vs_file_name
-  #   cookbook 'scp_vs'
-  #   action :create
-  # end
+  vs_file_name = 'vs_professional.exe'
+  vs_file_path = "#{directory_path}/#{vs_file_name}"
+  cookbook_file vs_file_path do
+    source vs_file_name
+    cookbook 'scp_vs'
+    action :create
+  end
 
   # Run installation
   scp_windows_powershell_script_elevated 'Run installation' do
