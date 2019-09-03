@@ -12,9 +12,11 @@ var w16s_iis = PackerTemplates_Create("w16s-iis", parents: w16s_dotnet);
 
 var w16s_sql16d = PackerTemplates_Create("w16s-sql16d", parents: w16s_iis);
 
-var w16s_solr662 = PackerTemplates_Create("w16s-solr662", parents: w16s_sql16d);
-var w16s_solr721 = PackerTemplates_Create("w16s-solr721", parents: w16s_sql16d);
-var w16s_solr750 = PackerTemplates_Create("w16s-solr750", parents: w16s_sql16d);
+var w16s_vs19p = PackerTemplates_Create("w16s-vs19p", parents: w16s_sql16d);
+
+var w16s_solr662 = PackerTemplates_Create("w16s-solr662", parents: w16s_vs19p);
+var w16s_solr721 = PackerTemplates_Create("w16s-solr721", parents: w16s_vs19p);
+var w16s_solr750 = PackerTemplates_Create("w16s-solr750", parents: w16s_vs19p);
 
 var w16s_sc900 = PackerTemplates_Create("w16s-sc900", parents: w16s_solr662);
 
@@ -58,6 +60,7 @@ packerTemplates = packerTemplates.
   Concat(w16s_dotnet).
   Concat(w16s_iis).
   Concat(w16s_sql16d).
+  Concat(w16s_vs19p).
   Concat(w16s_solr662).
   Concat(w16s_solr721).
   Concat(w16s_solr750).

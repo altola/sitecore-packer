@@ -1,0 +1,10 @@
+name 'scp_packer_vs19p'
+maintainer 'Alex Smagin'
+maintainer_email 'me@asmagin.com'
+license 'MIT'
+description 'Installs/Configures Visual Studio 2019 Professional'
+long_description 'Installs/Configures Visual Studio 2019 Professional'
+version '1.0.0'
+
+depends 'scp_packer_w'
+depends 'scp_vs'
