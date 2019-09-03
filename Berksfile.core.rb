@@ -16,6 +16,9 @@ def scp_packer_sources
   # MSSQL
   scp_packer_cookbook 'sql16d'
 
+  # Visual Studio
+  scp_packer_cookbook 'vs19p'
+
   # SOLR
   scp_packer_cookbook 'solr662'
   scp_packer_cookbook 'solr721'
@@ -70,6 +73,7 @@ def scp_packer_sources
   scp_cookbook 'components', 'sql'
 
   scp_cookbook 'components', 'solr'
+  scp_cookbook 'components', 'vs'
   scp_cookbook 'components', 'sitecore', 'common'
   scp_cookbook 'components', 'sitecore', '90x'
   scp_cookbook 'components', 'sitecore', '91x'

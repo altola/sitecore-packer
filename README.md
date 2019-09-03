@@ -2,7 +2,7 @@
 
 **Contents** [Overview] | [Getting started] | [Usage] | [Next steps] | [Contributing] | [Resources]
 
-This repository contains Packer templates for a local Sitecore hosting environment with IIS and and SQL Server on Windows, SOLR and Sitecore 9.0 building virtual machine images and Vagrant boxes for VirtualBox, provisioned with Chef.
+This repository contains Packer templates for a local Sitecore hosting environment with IIS and and SQL Server on Windows, Solr, Visual Studio and Sitecore 9.0 building virtual machine images and Vagrant boxes for VirtualBox, provisioned with Chef.
 
 ## Overview
 
@@ -12,7 +12,7 @@ This repository contains Packer templates for a local Sitecore hosting environme
 
 This repository contains [Packer] templates for the following scenarios:
 
-* [Sitecore 9.0 hosting] using IIS, SQL Server 2016 and SOLR.
+* [Sitecore 9.0 hosting] using IIS, SQL Server 2016, Solr and Visual Studio.
 
 The virtual machine images and [Vagrant] boxes are built for [VirtualBox] and are provisioned using [Chef].
 
@@ -85,6 +85,8 @@ They contain the respective hosting tools with the default configuration are bas
   * **[w16s-solr662]** with Solr 6.6.2
 * **SOLR 7.2.1**
   * **[w16s-solr721]** with Solr 7.2.1
+* **Visual Studio 2019 Professional**
+  * **[w16s-vs19p]** with Visual Studio 2019 Professional
 * **Sitecore 9.0 Initial release**
   * **[w16s-sc900]** with Sitecore 9.0.0 rev. 171002 installed via SIF 1.2.1 and SPE
 * **Sitecore 9.0 Update 1**
@@ -188,6 +190,7 @@ w16s-dotnet-virtualbox-core: Info
 w16s-iis-virtualbox-core: Info
 w16s-sql16d-virtualbox-core: Info
 w16s-solr-virtualbox-core: Info
+w16s-vs-virtualbox-core: Info
 w16s-sc900-virtualbox-core: Info
 w16s-sc901-virtualbox-core: Info
 w16s-sc902-virtualbox-core: Info
@@ -213,6 +216,7 @@ packer-info
 ========================================
 Executing task: packer-info
 w16s-solr-virtualbox-core: Info
+w16s-vs-virtualbox-core: Info
 ...
 ```
 
