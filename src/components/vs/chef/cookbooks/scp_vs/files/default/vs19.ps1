@@ -2,6 +2,7 @@ param(
     $vsPath
 )
 
+# vs
 $vsArgs = @(
     "--wait"
     "--passive"
@@ -16,6 +17,7 @@ $vsArgs = @(
 $vsProc = Start-Process $vsPath -ArgumentList $vsArgs -wait -NoNewWindow -PassThru -RedirectStandardOutput 'vs19p-output.txt'
 $vsProc.ExitCode
 
+# resharper
 $rFile = ".\resharper.exe"
 $rUrl = "https://download-cf.jetbrains.com/resharper/ReSharperUltimate.2019.2.2/JetBrains.ReSharper.2019.2.2.web.exe"
 Start-BitsTransfer -Source $rUrl -Destination $rFile

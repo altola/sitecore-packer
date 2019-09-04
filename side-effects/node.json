@@ -3,7 +3,6 @@
     "recipe[scp_packer_dotnet::install]",
     "recipe[scp_packer_iis::install]",
     "recipe[scp_packer_sql16d::install]",
-    "recipe[scp_packer_vs::prepare]",
     "recipe[scp_packer_vs::install]",
     "recipe[scp_packer_solr::prepare]",
     "recipe[scp_packer_solr::install]",
