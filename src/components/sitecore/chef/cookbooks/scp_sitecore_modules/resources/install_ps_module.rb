@@ -24,7 +24,7 @@ action :install do
       }
 
     EOH
-    timeout 600
+    timeout 6000
     action :run
   end
 

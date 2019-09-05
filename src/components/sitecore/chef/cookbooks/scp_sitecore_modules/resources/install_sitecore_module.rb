@@ -35,7 +35,7 @@ action :install do
 
     EOH
     action :run
-    timeout 600
+    timeout 6000
   end
 
   # Generate install template
@@ -50,7 +50,7 @@ action :install do
   scp_windows_powershell_script_elevated "Install #{config['package_original_name']}" do
     code script_file_path
     cwd config['root']
-    timeout 600
+    timeout 6000
     action :run
   end
 

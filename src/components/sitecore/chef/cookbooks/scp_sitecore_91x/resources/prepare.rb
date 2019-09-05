@@ -90,6 +90,7 @@ action :install_sitecore_prerequisites do
         Invoke-WebRequest -Uri "#{sitecore['package_url']}" -WebSession $session -OutFile "#{sitecore['package_full_path']}" -UseBasicParsing -TimeoutSec 600000
       }
     EOH
+    timeout 14_400 # 4h when actual download time in Australia is 1-2h
     action :run
   end
 
