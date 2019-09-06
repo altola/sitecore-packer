@@ -1,7 +1,5 @@
 {
   "variables": {
-    "iso_url": "C://win10.iso",
-    "iso_checksum_type": "sha1",
-    "iso_checksum": "c25c4ab059ef2fded83b3d9fd923f2e719bc8a24"
+    "iso_url": "C://win10.iso"
   }
 }
