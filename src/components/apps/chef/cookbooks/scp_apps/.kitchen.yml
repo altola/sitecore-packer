@@ -1,0 +1,29 @@
+---
+driver:
+  name: vagrant
+  gui: true
+  username: vagrant
+  password: vagrant
+  elevated: true
+  elevated_username: vagrant
+  elevated_password: vagrant
+  vagrantfiles:
+    - ../../../../core/chef/Vagrantfile.kitchen
+
+provisioner:
+  name: chef_solo
+
+verifier:
+  name: inspec
+
+platforms:
+  - name: w16s
+    transport:
+      name: winrm
+    driver:
+      box: scp/w16s
+
+suites:
+  - name: default
+    run_list:
+      - recipe[scp_apps::server]

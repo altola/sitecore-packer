@@ -19,6 +19,9 @@ def scp_packer_sources
   # Visual Studio
   scp_packer_cookbook 'vs19p'
 
+  # Apps
+  scp_packer_cookbook 'apps'
+
   # SOLR
   scp_packer_cookbook 'solr662'
   scp_packer_cookbook 'solr721'
@@ -74,6 +77,7 @@ def scp_packer_sources
 
   scp_cookbook 'components', 'solr'
   scp_cookbook 'components', 'vs'
+  scp_cookbook 'components', 'apps'
   scp_cookbook 'components', 'sitecore', 'common'
   scp_cookbook 'components', 'sitecore', '90x'
   scp_cookbook 'components', 'sitecore', '91x'

@@ -6,6 +6,7 @@ cls; Remove-Item -Path .\build\w16s-vs\ -Recurse -Force; & .\ci.ps1 build w16s-v
 .\ci.ps1 build w16s-iis-virtualbox-core --recursive=true
 .\ci.ps1 build w16s-solr-virtualbox-core --recursive=true
 .\ci.ps1 build w16s-vs-virtualbox-core --recursive=true
+.\ci.ps1 build w16s-apps-virtualbox-core --recursive=true
 .\ci.ps1 build w16s-sc900-virtualbox-core --recursive=true
 dir
 

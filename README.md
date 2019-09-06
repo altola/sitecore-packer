@@ -190,7 +190,8 @@ w16s-dotnet-virtualbox-core: Info
 w16s-iis-virtualbox-core: Info
 w16s-sql16d-virtualbox-core: Info
 w16s-solr-virtualbox-core: Info
-w16s-vs-virtualbox-core: Info
+w16s-vs19p-virtualbox-core: Info
+w16s-apps-virtualbox-core: Info
 w16s-sc900-virtualbox-core: Info
 w16s-sc901-virtualbox-core: Info
 w16s-sc902-virtualbox-core: Info
